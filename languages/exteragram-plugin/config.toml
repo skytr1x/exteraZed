@@ -1,0 +1,17 @@
+name = "exteraGram"
+grammar = "python"
+path_suffixes = ["plugin"]
+line_comments = ["# "]
+autoclose_before = ";:.,=}])>"
+brackets = [
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "[", end = "]", close = true, newline = true },
+  { start = "(", end = ")", close = true, newline = true },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
+]
+auto_indent_using_last_non_empty_line = false
+increase_indent_pattern = ":\\s*$"
+decrease_indent_pattern = "^\\s*(else|elif|except|finally)\\b.*:"
+tab_size = 4
+hard_tabs = false
