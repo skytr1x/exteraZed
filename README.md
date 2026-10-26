@@ -4,4 +4,8 @@
 
 # Установка
 
-Zed -> Extensions -> Install Dev Extension
+```bash
+git clone https://github.com/skytr1x/exteraZed.git
+```
+
+Zed -> Extensions -> Install Dev Extension -> exteraZed
